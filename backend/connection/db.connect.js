@@ -1,8 +1,9 @@
 import mongoose from "mongoose";
+import 'dotenv/config';
 
 const db = async(req, res)=>{
     try {
-        await mongoose.connect('mongodb://localhost:27017/AI_Chat');
+        await mongoose.connect(process.env.MONGODB_URL);
         console.log('DB connected Successfully');
     } catch (error) {
         console.log(error)
