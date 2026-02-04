@@ -5,7 +5,8 @@ const Chat = () => {
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const [sessionId, setSessionId] = useState(null);
-  const API = 'http://localhost:3030'
+  // const API = 'http://localhost:3030'
+  const API = 'https://ai-chat-support-k9wf.onrender.com'
 
   const bottomRef = useRef(null);
 
