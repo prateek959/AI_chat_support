@@ -33,7 +33,7 @@ An AI-powered customer support chatbot for e-commerce websites, built with a Rea
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/prateek959/AI_chat_support
    cd ai-chat-support
    ```
 
