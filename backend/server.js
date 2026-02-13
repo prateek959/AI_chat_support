@@ -13,6 +13,13 @@ app.use(cors({
     origin:"*"
 }));
 
+app.get("/health", (req, res) => {
+  res.status(200).json({
+    status: "ok",
+    message: "server running",
+    time: new Date()
+  });
+});
 
 app.use('/chat', msgRoute);
 
